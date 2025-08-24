@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      new URL(`https://methodical-bell-74e5631a7a.media.strapiapp.com/**`),
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
