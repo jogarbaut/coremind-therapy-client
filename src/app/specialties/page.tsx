@@ -8,14 +8,6 @@ import Image from "next/image"
 import image from "../../../public/treatment-approaches.jpg"
 import PageHeader from "../components/ui/PageHeader"
 
-interface Service {
-  id: number
-  title: string
-  description?: string
-  duration?: string
-  notes?: string
-}
-
 const specialties = [
   {
     id: 1,
@@ -78,7 +70,9 @@ export default function Specialties() {
               {/* Text Labels */}
               <div className="text-center">
                 {specialty.description.map((description) => (
-                  <h3 className="text-gray-900 leading-tight">{description}</h3>
+                  <h3 key={description} className="text-gray-900 leading-tight">
+                    {description}
+                  </h3>
                 ))}
               </div>
             </div>

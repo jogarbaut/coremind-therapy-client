@@ -59,7 +59,7 @@ export default function ContactForm() {
     } catch (err) {
       setStatus({
         state: "error",
-        message: "Network error. Please check your connection and try again.",
+        message: `Network error: ${err}.`,
       })
     } finally {
       // Hide toast after a few seconds

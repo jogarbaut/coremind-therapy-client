@@ -38,6 +38,7 @@ export default function NavigationBar() {
             <div className="hidden lg:flex space-x-8">
               {navItems.map((item) => (
                 <Link
+                  key={item.id}
                   id={item.id}
                   href={item.href}
                   className={`transition-colors hover:text-gray-600 hover:cursor-pointer ${
@@ -65,7 +66,11 @@ export default function NavigationBar() {
               className="lg:hidden p-2 text-gray-400 hover:text-gray-900 focus:outline-none"
               aria-label="Toggle menu"
             >
-              {isOpen ? <span>x</span> : <span>☰</span>}
+              {isOpen ? (
+                <span className="hover:cursor-pointer">x</span>
+              ) : (
+                <span className="hover:cursor-pointer">☰</span>
+              )}
             </button>
           </div>
 
@@ -76,6 +81,7 @@ export default function NavigationBar() {
                 {navItems.map((item) => (
                   <Link
                     id={item.id}
+                    key={item.id}
                     href={item.href}
                     className={`block w-full text-left transition-colors hover:text-gray-800 ${
                       pathname === item.href ? "text-gray-900" : "text-gray-400"

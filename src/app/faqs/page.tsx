@@ -44,7 +44,7 @@ const faqs: FAQ[] = [
 export default function FAQS() {
   return (
     <>
-      <PageHeader>FAQ's</PageHeader>
+      <PageHeader>FAQ&apos;s</PageHeader>
 
       <TwoGrid>
         <div>

@@ -2,6 +2,27 @@ import Link from "next/link"
 import PageHeader from "../components/ui/PageHeader"
 import Image from "next/image"
 
+interface Post {
+  id: number
+  slug: string
+  title: string
+  description: string
+  coverImage: StrapiImage
+  publishedAt: string
+}
+
+interface StrapiImage {
+  id: number
+  url: string
+  alternativeText: string
+}
+
+function fmtDate(iso?: string) {
+  return iso
+    ? new Date(iso).toLocaleDateString("en-US", { dateStyle: "medium" })
+    : ""
+}
+
 async function getStrapiData(path: string) {
   try {
     const response = await fetch(
@@ -25,12 +46,12 @@ export default async function Blog() {
     <>
       <PageHeader>Blog</PageHeader>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {posts.data.map((post: any) => {
+        {posts.data.map((post: Post) => {
           const imageUrl = post.coverImage?.url || null
           return (
             <li
               key={post.id}
-              className="rounded-lg border bg-white hover:shadow-sm transition"
+              className="rounded-lg border border-gray-100 bg-white hover:shadow-sm transition"
             >
               <Link href={`/blog/${post.slug}`} className="block">
                 {/* Image (optional) */}
@@ -55,6 +76,9 @@ export default async function Blog() {
                       {post.description}
                     </p>
                   )}
+                  <p className="mt-1 text-xs text-gray-500">
+                    Published: {fmtDate(post.publishedAt)}
+                  </p>
                 </div>
               </Link>
             </li>

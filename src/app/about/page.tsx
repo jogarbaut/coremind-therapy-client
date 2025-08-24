@@ -35,22 +35,22 @@ export default function About() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Though I work with individuals across the lifespan, I am
             particularly passionate about working with teens and young adults.
-            As if life weren't hard enough, so much goes on during this time
-            that can easily make your world feel like it's spinning out of
-            control. If you're looking for a safe space to discover and express
-            yourself while also building a strong foundation for your future,
-            you're in the right place.
+            As if life weren&apos;t hard enough, so much goes on during this
+            time that can easily make your world feel like it&apos;s spinning
+            out of control. If you&apos;re looking for a safe space to discover
+            and express yourself while also building a strong foundation for
+            your future, you&apos;re in the right place.
           </p>
           <p className="text-gray-700 leading-relaxed">
             As an Asian American woman, I get how hard it can be to reach out
-            and ask for help. With me, therapy isn't be about fixing symptoms —
-            it's about exploring what is beneath them, honoring everything that
-            makes you, <span className="italic">you</span>, and helping you to
-            discover your strengths so that you can thrive! Your story — your
-            background, your beliefs, your struggles — matters. Whether you're
-            dealing with life transitions, interpersonal issues, perfectionism,
-            past traumas, or just wanting to develop more self-awareness, this
-            is a place that supports you.
+            and ask for help. With me, therapy isn&apos;t be about fixing
+            symptoms — it&apos;s about exploring what is beneath them, honoring
+            everything that makes you, <span className="italic">you</span>, and
+            helping you to discover your strengths so that you can thrive! Your
+            story — your background, your beliefs, your struggles — matters.
+            Whether you&apos;re dealing with life transitions, interpersonal
+            issues, perfectionism, past traumas, or just wanting to develop more
+            self-awareness, this is a place that supports you.
           </p>
         </div>
       </div>
