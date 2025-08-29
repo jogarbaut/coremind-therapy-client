@@ -22,7 +22,7 @@ const faqs: FAQ[] = [
     id: 2,
     question: "DO YOU TAKE INSURANCE?",
     answer:
-      "We are an out-of-network provider, meaning that we do not bill services directly to your insurance carrier. However, many health insurance companies provide partial reimbursement for services. We can offer a superbill to support your claim to your insurance. We encourage you to contact your insurance provider before we meet to ask: 1) Do I have out-of-network benefits for mental health services? 2) What is the rate of reimbursement? 3) How many sessions are covered? 4) Is there a deductible I must meet first?",
+      "We do accept limited insurance carriers. However, many health insurance companies also provide partial reimbursement for services. For those we are not in-network with, we can offer a superbill to support your claim to your insurance. We encourage you to contact your insurance provider before we meet to ask: 1) Do I have out-of-network benefits for mental health services? 2) What is the rate of reimbursement? 3) How many sessions are covered? 4) Is there a deductible I must meet first?",
     category: "Payment",
   },
   {
