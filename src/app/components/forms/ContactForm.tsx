@@ -20,7 +20,7 @@ export default function ContactForm() {
 
     // Required by Web3Forms
     const payload = {
-      access_key: process.env.WEB3FORMS_ACCESS_KEY,
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
       subject: "New contact form submission",
       from_name: String(fd.get("name") || ""),
       // Your fields
