@@ -61,10 +61,10 @@ export default function Home() {
             </p>
             <p className="max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
               Being a teen and in your twenties can be hard. One moment, you are
-              so sure of yourself and your future and the next, you're drowning
-              in overwhelm and doubt. Whether you are a teen or twenty-something
-              yourself or a parent doing the big, important job of supporting
-              one, you are not alone.
+              so sure of yourself and your future and the next, you&apos;re
+              drowning in overwhelm and doubt. Whether you are a teen or
+              twenty-something yourself or a parent doing the big, important job
+              of supporting one, you are not alone.
             </p>
           </section>
         </div>

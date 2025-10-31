@@ -33,11 +33,11 @@ export default function About() {
             and big life transitions.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            With me, therapy isn't be about fixing symptoms — it's about
-            exploring what is beneath them, honoring everything that makes you,
-            you, and helping you to discover your strengths so that you can
+            With me, therapy isn&apos;t be about fixing symptoms — it&apos;s
+            about exploring what is beneath them, honoring everything that makes
+            you, you, and helping you to discover your strengths so that you can
             thrive! Your story — your background, your beliefs, your struggles —
-            matters. Whether you're dealing with major life transitions,
+            matters. Whether you&apos;re dealing with major life transitions,
             interpersonal issues, perfectionism, past traumas, or just wanting
             to develop more self-awareness, this is a place that supports you.
           </p>
