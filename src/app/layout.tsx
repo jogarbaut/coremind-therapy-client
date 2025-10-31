@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import NavigationBar from "./components/ui/NavigationBar"
-import { Cardo } from "next/font/google"
+import { Open_Sans } from "next/font/google"
 import Footer from "./components/ui/Footer"
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Private therapist based in California",
 }
 
-const cardo = Cardo({
+const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
 })
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={cardo.className}>
+    <html lang="en" className={openSans.className}>
       <body className="bg-vanilla min-h-screen flex flex-col">
         <NavigationBar />
         <main className="flex-1">

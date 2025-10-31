@@ -1,19 +1,41 @@
 import Image from "next/image"
 import image from "../../public/coremind-therapy-logo.svg"
-import image2 from "../../public/therapy-chair.jpg"
+import image2 from "../../public/hero-image.svg"
+import image3 from "../../public/hero-image-2.svg"
+import image4 from "../../public/hero-image-3.svg"
+import Pill from "./components/ui/Pill"
 
 export default function Home() {
   return (
     <>
       <h1 className="hidden">CoreMind Therapy</h1>
-      <div className="grid grid-cols-2 items-center h-full mb-16">
-        <div className="flex items-center justify-center text-center md:text-left">
-          <Image
-            src={image}
-            alt="CoreMind Therapy Logo"
-            className="object-cover"
-          />
-        </div>
+      <div className="grid grid-cols-2 items-center h-3/4 mb-36">
+        <section
+          aria-labelledby="hero-title"
+          className="flex flex-col items-center justify-center text-center space-y-6 px-4"
+        >
+          <header className="flex flex-col items-center space-y-2">
+            <Image
+              src={image}
+              alt="CoreMind Therapy logo"
+              width={800}
+              height={400}
+              className="w-full h-auto object-contain"
+              priority
+            />
+            <h2
+              id="hero-title"
+              className="uppercase tracking-wide font-semibold text-xs sm:text-base md:text-lg leading-relaxed"
+            >
+              Therapy for Teens and Twenty-Somethings
+            </h2>
+          </header>
+
+          <p className="uppercase max-w-xl text-xs sm:text-base md:text-lg">
+            You see so many amazing qualities in them — if only they can see it
+            for themselves.
+          </p>
+        </section>
         <div className="flex items-center justify-center text-center md:text-left">
           <Image
             src={image2}
@@ -24,33 +46,59 @@ export default function Home() {
       </div>
 
       <section className="space-y-6 mx-auto text-center">
-        <h2 className="text-xl sm:text-2xl font-light text-gray-900 tracking-wide text-center">
-          Where you will find the courage to embrace what makes you,
-          <span className="italic"> you</span>!
-        </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Life can be hard. And sometimes, it can feel like you&apos;re drowning
-          in responsibilities and expectations. Whether you are feeling lost,
-          lonely, stuck, or unsure of your future, there{" "}
-          <span className="italic">is</span> a path forward for you, one that
-          you do not have to brave alone.
-        </p>
+        <div className="grid grid-cols-2 items-center h-3/4 mb-36">
+          <div className="flex items-center justify-center text-center md:text-left">
+            <Image
+              src={image3}
+              alt="Therapist holding a dog"
+              className="object-cover max-h-screen"
+            />
+          </div>
+          <section className="flex flex-col items-center justify-center text-center space-y-6 px-4">
+            <p className="uppercase max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+              I help teens (age 12+) and twenty-somethings overcome challenges
+              with anxiety, depression, and adjustment.
+            </p>
+            <p className="max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+              Being a teen and in your twenties can be hard. One moment, you are
+              so sure of yourself and your future and the next, you're drowning
+              in overwhelm and doubt. Whether you are a teen or twenty-something
+              yourself or a parent doing the big, important job of supporting
+              one, you are not alone.
+            </p>
+          </section>
+        </div>
+      </section>
 
-        <p className="text-gray-700 leading-relaxed mb-4">
-          It&apos;s easy to feel like you&apos;re losing yourself and become
-          disconnected when everything around you gets loud and overwhelming.
-          But what if it didn&apos;t have to be that way? What if you can find
-          purpose in what you do and not just manage to get through the day?
-          What if you can build resilience so the setbacks don&apos;t knock you
-          down so hard? And what if you can find the courage to stay true to
-          yourself even when it feels hard and scary?
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Rather than avoiding the chaos, let&apos;s help you take back control
-          of your own life. Let&apos;s help you find your direction, discover
-          your voice - who you are and what you stand for - and find ways to
-          show up as your authentic self even when things gets tough.
-        </p>
+      <section className="space-y-6 mx-auto text-center">
+        <div className="grid grid-cols-2 items-center h-3/4">
+          <section className="flex flex-col items-center justify-center text-center space-y-6 px-4">
+            <p className="max-w-xl text-2xl sm:text-3xl md:text-5xl leading-relaxed">
+              How I can help
+            </p>
+            <p className="max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+              I work with teens and folx throughout their twenties to help them
+              create a life worth living. Clients often come to therapy feeling
+              lost, stuck, lonely, and overwhelmed. They are bright,
+              strong-minded, and resilient. Yet somehow, life keeps managing to
+              knock them down.
+            </p>
+            <p className="max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+              Therapy with me is focused on helping teens and young adults
+              discover themselves - who they are and what they stand for - and
+              find the courage and skills to embrace their fullest, most
+              authentic selves.
+            </p>
+            <Pill phone="+19252360295" display="925-236-0295" />
+          </section>
+          <div className="flex items-center justify-center text-center md:text-left">
+            <Image
+              src={image4}
+              alt="Therapist holding a dog"
+              className="object-cover max-h-screen"
+            />
+          </div>
+        </div>
       </section>
     </>
   )
