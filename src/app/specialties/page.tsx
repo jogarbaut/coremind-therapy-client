@@ -29,7 +29,7 @@ const specialties = [
   },
   {
     id: 4,
-    description: ["Young Adults", "Adults"],
+    description: ["Teens", "Young Adults", "Adults"],
     image: image4,
     alt: "Group of teenagers",
   },

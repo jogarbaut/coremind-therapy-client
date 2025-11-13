@@ -1,6 +1,6 @@
 import Image from "next/image"
 import TwoGrid from "../components/ui/TwoGrid"
-import image from "../../../public/faqs.jpg"
+import image from "../../../public/faqs.svg"
 import PageHeader from "../components/ui/PageHeader"
 
 interface FAQ {
@@ -15,7 +15,7 @@ const faqs: FAQ[] = [
     id: 1,
     question: "WHAT ARE YOUR FEES?",
     answer:
-      "We offer a free 15-minute initial phone consultation to help get you started and figure out whether we are the best for you. During that phone consultation, fees will be discussed in greater detail. It is our hope that fees do not stand in the way of you getting the support you desire and need.",
+      "We offer a free 10-15 minute initial phone consultation to help get you started and figure out whether we are the best for you. During that phone consultation, fees will be discussed in greater detail. It is our hope that fees do not stand in the way of you getting the support you desire and need.",
     category: "Payment",
   },
   {
@@ -38,6 +38,13 @@ const faqs: FAQ[] = [
     answer:
       "Yes, we do offer evening session times. Please inquire for availability.",
     category: "Sessions",
+  },
+  {
+    id: 5,
+    question: "WHERE ARE YOU LOCATED?",
+    answer:
+      "We are based in Walnut Creek, California. However, we serve clients throughout the Bay Area and all of California as sessions are exlusively offered through telehealth at this time.",
+    category: "Location",
   },
 ]
 
@@ -64,13 +71,12 @@ export default function FAQS() {
             </div>
           ))}
         </div>
-        <div className="relative h-full min-h-96 overflow-hidden">
+        <div className="relative w-full h-auto md:h-[50vh]">
           <Image
             src={image}
             alt="Plant"
             fill
-            className="object-cover"
-            sizes="(max-width:768px) 50vw, 100vw"
+            className="w-full h-auto md:h-full object-contain"
           />
         </div>
       </TwoGrid>

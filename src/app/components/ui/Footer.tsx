@@ -43,7 +43,7 @@ export default function Footer() {
               COREMIND THERAPY
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Where you will find the courage to embrace what makes you, you.
+              Based in Walnut Creek, California and serving clients statewide.
             </p>
           </section>
 
@@ -54,7 +54,7 @@ export default function Footer() {
             </h3>
             <address className="not-italic space-y-2 text-sm text-gray-300">
               <p>
-                Phone:{" "}
+                Call or text:{" "}
                 <a
                   href={`tel:${phoneE164}`}
                   className="underline decoration-gray-500 hover:decoration-gray-300"
@@ -71,7 +71,8 @@ export default function Footer() {
                   {email}
                 </a>
               </p>
-              <p>Telehealth sessions available</p>
+              <p>1460 Maria Lane #300, Walnut Creek, California</p>
+              <p>Telehealth sessions only</p>
             </address>
           </section>
         </div>

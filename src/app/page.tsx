@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <>
       <h1 className="hidden">CoreMind Therapy</h1>
-      <div className="grid grid-cols-2 items-center h-3/4 mb-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 mb-16 md:mb-36">
         <section
           aria-labelledby="hero-title"
-          className="flex flex-col items-center justify-center text-center space-y-6 px-4"
+          className="flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4 md:space-y-6 px-4"
         >
-          <header className="flex flex-col items-center space-y-2">
+          <header className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
             <Image
               src={image}
               alt="CoreMind Therapy logo"
@@ -46,15 +46,15 @@ export default function Home() {
       </div>
 
       <section className="space-y-6 mx-auto text-center">
-        <div className="grid grid-cols-2 items-center h-3/4 mb-36">
-          <div className="flex items-center justify-center text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 mb-16 md:mb-36">
+          <div className="order-2 md:order-1 flex items-center justify-center">
             <Image
               src={image3}
               alt="Therapist holding a dog"
               className="object-cover max-h-screen"
             />
           </div>
-          <section className="flex flex-col items-center justify-center text-center space-y-6 px-4">
+          <section className="order-1 md:order-2 flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4 md:space-y-6 px-4">
             <p className="uppercase max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
               I help teens (age 12+) and twenty-somethings overcome challenges
               with anxiety, depression, and adjustment.
@@ -71,8 +71,8 @@ export default function Home() {
       </section>
 
       <section className="space-y-6 mx-auto text-center">
-        <div className="grid grid-cols-2 items-center h-3/4">
-          <section className="flex flex-col items-center justify-center text-center space-y-6 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 mb-16 md:mb-36">
+          <section className="flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4 md:space-y-6 px-4">
             <p className="max-w-xl text-2xl sm:text-3xl md:text-5xl leading-relaxed">
               How I can help
             </p>

@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center md:text-left my-6">
           <p className="mt-3 text-gray-700 text-center">
-            Ready to take the first step? We offer a free 15-minute initial
+            Ready to take the first step? We offer a free 10-15 minute initial
             phone consultation to help you get started and determine if
             we&apos;re the right fit for your needs.
           </p>

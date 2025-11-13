@@ -8,11 +8,11 @@ export default function About() {
       <PageHeader>About</PageHeader>
       <div className="mb-12 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 items-center max-w-6xl mx-auto p-4">
         <div className="flex flex-col items-center">
-          <div className="relative w-full h-auto">
+          <div className="relative w-full h-auto md:h-[50vh]">
             <Image
               src={headshot}
               alt="Doctor Jones portrait"
-              className="w-full max-h-[40vh] object-contain"
+              className="w-full h-auto md:h-full object-contain"
             />
           </div>
           <div className="text-center mt-4">
@@ -27,10 +27,10 @@ export default function About() {
         <div>
           <p className="text-gray-700 leading-relaxed mb-6">
             It is an honor to support you on your mental health journey! I am a
-            licensed clinical psychologist based in California, and I specialize
-            in helping teens and young adults navigate challenges with
-            anxiety/stress, depression, relationships, identity, perfectionism,
-            and big life transitions.
+            licensed clinical psychologist based in Walnut Creek, California. I
+            specialize in helping teens and young adults navigate challenges
+            with anxiety/stress, depression, relationships, identity,
+            perfectionism, and big life transitions.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             With me, therapy isn&apos;t be about fixing symptoms — it&apos;s

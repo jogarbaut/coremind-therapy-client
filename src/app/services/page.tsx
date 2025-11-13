@@ -46,16 +46,16 @@ export default function Services() {
             <Image
               src={servicesImage}
               alt="Therapy space with calming visuals"
-              className="w-full max-h-[40vh] object-contain"
+              className="w-full max-h-[50vh] object-contain"
               priority
             />
           </div>
         </div>
       </section>
 
-      <section className="mb-6 grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 items-center max-w-6xl mx-auto p-4">
+      <section className="mb-6 grid grid-cols-1 md:grid-cols-[5fr_4fr] gap-6 items-center max-w-6xl mx-auto p-4">
         {/* Left: Services text (slightly larger column) */}
-        <div>
+        <div className="order-1 md:order-2">
           <PageHeader>What to expect</PageHeader>
 
           <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
@@ -75,12 +75,12 @@ export default function Services() {
         </div>
 
         {/* Right: Responsive image */}
-        <div className="flex flex-col items-center">
+        <div className="order-2 md:order-1 flex flex-col items-center">
           <div className="relative w-full">
             <Image
               src={expectImage}
               alt="Client waving at camera"
-              className="w-full max-h-[40vh] object-contain"
+              className="w-full max-h-[50vh] object-contain"
               priority
             />
           </div>
