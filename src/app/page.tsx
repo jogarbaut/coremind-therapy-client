@@ -56,8 +56,8 @@ export default function Home() {
           </div>
           <section className="order-1 md:order-2 flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4 md:space-y-6 px-4">
             <p className="uppercase max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
-              I help teens (age 12+) and twenty-somethings overcome challenges
-              with anxiety, depression, and adjustment.
+              I help teens and twenty-somethings overcome challenges with
+              anxiety, depression, and adjustment.
             </p>
             <p className="max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
               Being a teen and in your twenties can be hard. One moment, you are
