@@ -42,7 +42,7 @@ export default function CaliforniaTherapyPage() {
           include starting or changing careers, managing increased
           responsibility, adjusting to new relationships, or feeling stuck
           despite outward success. Therapy offers a structured space to slow
-          things down, understand what's going on beneath the surface, and
+          things down, understand what&rsquo;s going on beneath the surface, and
           develop practical tools for moving forward.
         </p>
       </section>
