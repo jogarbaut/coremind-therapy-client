@@ -2,7 +2,7 @@ import { MetadataRoute } from "next"
 import { regions } from "@/lib/region"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://coremind-therapy.com"
+  const baseUrl = "https://www.coremind-therapy.com"
   const now = new Date()
 
   return [

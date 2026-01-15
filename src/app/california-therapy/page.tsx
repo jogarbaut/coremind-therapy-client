@@ -5,14 +5,14 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Online Therapy Across California | CoreMind Therapy",
   description:
-    "CoreMind Therapy provides online therapy for young adults across California. Support for anxiety, stress, burnout, relationships, and life transitions via secure telehealth.",
+    "CoreMind Therapy provides online therapy for individuals across California. Support for anxiety, stress, burnout, relationships, and life transitions via secure telehealth.",
   alternates: {
     canonical: "https://coremind-therapy.com/california-therapy",
   },
   openGraph: {
     title: "Online Therapy Across California | CoreMind Therapy",
     description:
-      "Online therapy for young adults across California. Support for anxiety, stress, burnout, relationships, and life transitions via secure telehealth.",
+      "Online therapy for individuals across California. Support for anxiety, stress, burnout, relationships, and life transitions via secure telehealth.",
     url: "https://coremind-therapy.com/california-therapy",
     type: "website",
   },
@@ -26,7 +26,7 @@ export default function CaliforniaTherapyPage() {
           Online Therapy Services Across California
         </h1>
         <p className="mt-4 text-lg text-gray-700">
-          CoreMind Therapy provides online therapy for young adults throughout
+          CoreMind Therapy provides online therapy for individuals throughout
           California. We work with individuals navigating anxiety, stress,
           burnout, relationship challenges, and major life transitions through
           secure telehealth sessions.
@@ -35,14 +35,14 @@ export default function CaliforniaTherapyPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-xl font-semibold">
-          Therapy for Young Adults Across California
+          Therapy for Individuals Across California
         </h2>
         <p className="text-gray-700">
-          Many young adults reach out during periods of change. This might
+          Many individuals reach out during periods of change. This might
           include starting or changing careers, managing increased
           responsibility, adjusting to new relationships, or feeling stuck
           despite outward success. Therapy offers a structured space to slow
-          things down, understand what’s going on beneath the surface, and
+          things down, understand what's going on beneath the surface, and
           develop practical tools for moving forward.
         </p>
       </section>
@@ -61,14 +61,14 @@ export default function CaliforniaTherapyPage() {
           Online therapy offers flexibility without compromising quality.
           Sessions take place through a secure, HIPAA-compliant platform and
           follow the same ethical and professional standards as in-person
-          therapy. This approach works especially well for young adults
-          balancing work, school, or other commitments.
+          therapy. This approach works especially well for individuals balancing
+          work, school, or other commitments.
         </p>
       </section>
 
       <section className="mt-10 space-y-4">
         <h2 className="text-xl font-semibold">
-          Common Reasons Young Adults Seek Therapy
+          Common Reasons Individuals Seek Therapy
         </h2>
         <p className="text-gray-700">
           Clients often reach out for support with:
